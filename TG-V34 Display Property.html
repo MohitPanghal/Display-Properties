@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG-V34 Display Property</title>
+    <link rel="stylesheet" href="TG-V34 Display Property.css">
+</head>
+
+<body>
+    <!-- Dislpay Property in CSS -->
+    <!-- Important:-
+    1. HTML में कोई भी Element एक Rectangulr Box होता है।
+    2. हर एक Element एक Display Property Occupy करता है।
+    3. 4 Important Value Of Display Property:-
+    i.) Display: Block
+    ii.) Display: Inline
+    iii.)Display: Inline-Block
+    iv.) Display: None
+    4. Block & inline Default Display Property हो सकती है किसी Element की। (दोनों मे से एक)
+    But in Some Cases/Elements Inline-Block & None भी Default Property हो सकती है। (But In Rare Case)
+
+    Difference Between Block, inline & Inline-Block Property:-
+    !-(1)........Block........
+    *) Block Element हमेशा New Line से Start होगा।
+    *) Full Width लेगा। जितना Space रहेगा वो पूरा लेगा।
+    *) Height & Width दोनों Apply कर सकते हैं।
+    *=> यदि आप दो Block Element को लेते हो तो दोनों अलग-अलग Line से Start होंगे।
+
+    !-(2)........Inline........
+    *) Inline Element New Line से Start नहीं होता। जहां पर Element डालेंगे वहीं से Start हो जीएगा।
+    *) Full Width नहीं लेता उतना ही Width लेता है जितना Necessary होता हैं।
+    *) Height & Width Apply कर सकते हैं।
+
+    !-(3)........Inline-Block........
+    *) Inline-Block Element भी New Line से Start नहीं होता। जहां पर Element डालेंगे वहीं से Start हो जीएगा। (Same as Inline)
+    *) Full Width नहीं लेता उतना ही Width लेता है जितना Necessary होता हैं। (Same as Inline)
+    *) Height & Width दोनों Apply कर सकते हैं। (Same as Block)
+
+!-(4) None:- 
+        *) यदि किसी भी Element को हटाना है तो Display :- None Property का Use करते हैं।
+        *)    Display :- None करने से Element तो हट जाता है लेकिन साथ में Reserve Space भी खत्म हो जाता है। 
+
+    ! Visbility :- Hidden :--
+        *) Visbility :- Hidden करने से Element तो हट जाता है लेकिन अपनी Sapce को Reserve रखता है। 
+        *) यानि की Element दिखता तो नहीं लेकिन अपनी Reserve Space जरूर Occupy करके रखेगा। 
+
+-->
+
+
+    <!-- Block Property  -->
+    <div class="block-example">
+        This Is A Div. An Examle For Block Property. <br>
+        1. Start With New Line <br>
+        2. Will Consume/Take Full Width <br>
+        3. Can Apply Height And Width
+
+    </div>
+    <div class="display-block">
+        This Is A Div1
+    </div>
+    <div class="display-block">
+        This Is A Another Div2
+    </div>
+    <hr>
+
+    <!-- Inline Property  -->
+    <div class="inline-example">
+        This Is A Div. An Examle For Inline Property. <br>
+        1. Will NOT Start With New Line <br>
+        2. Will NOT Consume/Take Full Width <br>
+        3. Can NOT Apply Height And Width
+    </div>
+    <div class="display-inline">
+        This Is A Div1
+    </div>
+    <div class="display-inline">
+        This Is A Another Div2
+    </div>
+    <hr>
+    <!-- Inline Property  -->
+    <div class="inline-block-example">
+        This Is A Div. An Examle For Inline-Block Property. <br>
+        1. Will NOT Start With New Line <br>
+        2. Will NOT Consume/Take Full Width <br>
+        3. Can NOT Apply Height And Width
+    </div>
+    <div class="display-inline-block">
+        This Is A Div1
+    </div>
+    <div class="display-inline-block">
+        This Is A Another Div2
+    </div>
+
+    <hr>
+    <!-- None & Visibility:-Hidden Property  -->
+    <div class="None-example">
+        This Is A Div. An Examle For None & Visibility:-Hidden Property. <br>
+        1. Will NOT Start With New Line <br>
+        2. Will NOT Consume/Take Full Width <br>
+        3. Can NOT Apply Height And Width
+    </div>
+    <div class="display-None-Hidden" id="div1">
+        This Is A Div1
+    </div>
+    <div class="display-None-Hidden" id="div2">
+        This Is A Another Div2
+    </div>
+
+
+</body>
+
+</html>

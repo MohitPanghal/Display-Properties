@@ -1,0 +1,99 @@
+hr {
+    height: 10px;
+    border: 2px solid rgb(0, 89, 255);
+    background-color: rgb(0, 4, 255);
+}
+
+/* ------------------------------------------------------------- */
+
+/* Block Property */
+.block-example {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    border: .2em solid red;
+    background-color: rgb(235, 110, 65);
+
+}
+
+.display-block {
+    border: .2em solid black;
+    width: 50svw;
+    height: 7em;
+
+}
+
+/* ------------------------------------------------------------- */
+
+/* Inline Property */
+.inline-example {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    border: .2em solid red;
+    background-color: rgb(235, 110, 65);
+
+
+}
+
+.display-inline {
+    display: inline;
+    border: .2em solid black;
+
+    /* Height And Width will ALSO WORK in Inline-Block Property */
+    width: 50svw;
+    height: 7em;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Inline-Block Property */
+.inline-block-example {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    border: .2em solid red;
+    background-color: rgb(235, 110, 65);
+}
+
+.display-inline-block {
+    display: inline-block;
+    border: .2em solid black;
+
+    /* Height And Width will WORK in Inline Property */
+    width: 50svw;
+    height: 7em;
+}
+
+/* ------------------------------------------------------------- */
+
+/* None & Hidden Property */
+.None-example {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    border: .2em solid red;
+    background-color: rgb(235, 110, 65);
+}
+
+.display-None-Hidden {
+    display: inline-block;
+    border: .2em solid black;
+
+    /* Height And Width will WORK in Inline Property */
+    width: 50svw;
+    height: 7em;
+}
+
+#div1 {
+    /* display: none; */
+    /* यदि किसी भी Element को आपको हटाना है than you can use Display:-None Proerty.  */
+    /* Display:-None करने से Space Element का Reserve Space भी खत्म हो जाता है।   */
+
+    visibility: hidden;
+    /* लेकिन visibility:-hidden करने से Element हट तो जाता है लेकिन अपनी Space को Reserve रखता है। */
+    /* visibility:-hidden से Element दिखता तो नहीं है लेकिन अपना Space जरूर Occupy करेगा। */
+}
